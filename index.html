@@ -138,10 +138,10 @@
 </main></div>
 <script>
 const KEY='mo_traders_pos_v1';
-const SUPABASE_URL='https://ghejomowjomohauqntoi.supabaseClient.co';
+const SUPABASE_URL='https://ghejomowjomohauqntoi.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_pFOnhslhKETPz78-gVXc_Q_EZlil_-e';
-const supabaseClientReady=!!(window.supabase&&typeof window.supabaseClient.createClient==='function');
-const supabaseClient=supabaseClientReady?window.supabaseClient.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
+const supabaseClientReady=!!(window.supabase&&typeof window.supabase.createClient==='function');
+const supabaseClient=supabaseClientReady?window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 let db={sales:[],orders:[],purchases:[],expenses:[],settings:{name:"M O Trader's Advertisement Solution",phone:"03392727820",address:"Shop no UG 154, Ruby Cinema Shopping Mall, Saeedabad, Baldia Town, Karachi",footer:"Advance must for customised products. Thank you for your business!"}};
 let cloudReady=false,currentUser=null,stopCloudListener=null,syncing=false,lastLocalSync=0;
 const $=id=>document.getElementById(id);
